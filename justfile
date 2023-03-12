@@ -1,17 +1,34 @@
-alias b := build
-
-build_name := 'iosevka-cosmic'
-build_name_tc := replace(titlecase(build_name), " ", "-")
-default_target := "super-ttc"
+build_name := "iosevka-cosmic"
+# build_name_tc := replace(titlecase(build_name), " ", "-")
+install_dir := "~/.local/share/fonts/"
+target := "super-ttc"
 version := "21.0.0"
 
-build target=default_target:
+default:
+    @just --list --unsorted
+
+# build all 3 fonts & install them
+build-all: cosmic milky andromeda install
+
+# build Iosevka Cosmic (monospaced)
+cosmic:
     docker run -e FONT_VERSION={{version}} -it -v \
       {{invocation_directory()}}:/build avivace/iosevka-build \
       {{target}}::{{build_name}}
 
+# build Iosevka MilkyWay (quasi-proportional; sans-serif)
+milky:
+    docker run -e FONT_VERSION={{version}} -it -v \
+      {{invocation_directory()}}:/build avivace/iosevka-build \
+      {{target}}::{{build_name}}-proportional
+
+# build Iosevka Andromeda (quasi-proportional; serif)
+andromeda:
+    docker run -e FONT_VERSION={{version}} -it -v \
+      {{invocation_directory()}}:/build avivace/iosevka-build \
+      {{target}}::{{build_name}}-slab
+
+# install fonts to {{install_dir}}.
 install:
-    # mkdir -p ~/.local/share/fonts/{{build_name_tc}}
-    # rm -rf ~/.local/share/fonts/{{build_name_tc}}/*
-    find dist/.{{default_target}} -path '*.ttc' -exec cp '{}' ~/.local/share/fonts/ \;
+    find dist/.{{target}} -path '*.ttc' -exec cp '{}' {{install_dir}} \;
     fc-cache -f -v

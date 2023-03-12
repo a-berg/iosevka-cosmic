@@ -56,6 +56,26 @@ lig-equal-chain = "without-notch"
   [buildPlans.iosevka-cosmic.ligations]
   inherits = "dlig"
 
+[buildPlans.iosevka-cosmic.weights.light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.iosevka-cosmic.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.iosevka-cosmic.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.iosevka-cosmic.weights.heavy]
+shape = 900
+menu = 900
+css = 900
+
 [buildPlans.iosevka-cosmic-proportional]
 family = "Iosevka MilkyWay"
 spacing = "quasi-proportional"
@@ -110,6 +130,26 @@ punctuation-dot = "round"
 diacritic-dot = "round"
 lig-neq = "more-slanted"
 lig-equal-chain = "without-notch"
+
+[buildPlans.iosevka-cosmic-proportional.weights.light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.iosevka-cosmic-proportional.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.iosevka-cosmic-proportional.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.iosevka-cosmic-proportional.weights.heavy]
+shape = 900
+menu = 900
+css = 900
 
 [buildPlans.iosevka-cosmic-slab]
 family = "Iosevka Andromeda"
@@ -166,6 +206,26 @@ diacritic-dot = "round"
 lig-neq = "more-slanted"
 lig-equal-chain = "without-notch"
 
+[buildPlans.iosevka-cosmic-slab.weights.light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.iosevka-cosmic-slab.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.iosevka-cosmic-slab.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.iosevka-cosmic-slab.weights.heavy]
+shape = 900
+menu = 900
+css = 900
+
 ###################################################################################################
 # Collect plans
 
@@ -174,7 +234,12 @@ from = [
     "iosevka-cosmic"
 ]
 
-# [collectPlans.iosevka-cosmic-terminal]
-# from = [
-#     "iosevka-cosmic-terminal"
-# ]
+[collectPlans.iosevka-cosmic-proportional]
+from = [
+    "iosevka-cosmic-proportional"
+]
+
+[collectPlans.iosevka-cosmic-slab]
+from = [
+    "iosevka-cosmic-slab"
+]
