@@ -2,7 +2,7 @@
 family = "Iosevka Cosmic"
 spacing = "normal"
 serifs = "sans"
-no-cv-ss = true
+noCvSs = true
 export-glyph-names = true
 
 [buildPlans.iosevka-cosmic.variants.design]
