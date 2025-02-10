@@ -1,11 +1,21 @@
-[buildPlans.iosevka-cosmic]
+[buildPlans.IosevkaCosmic]
 family = "Iosevka Cosmic"
 spacing = "normal"
 serifs = "sans"
 noCvSs = true
-export-glyph-names = true
+exportGlyphNames = true
 
-[buildPlans.iosevka-cosmic.variants.design]
+[buildPlans.IosevkaCosmic.variants.design]
+one = "no-base"
+two = "curly-neck"
+three = "flat-top"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+six = "straight-bar"
+seven = "curly-serifless"
+eight = "two-circles"
+nine = "straight-bar"
+zero = "slashed"
 capital-a = "curly-serifless"
 capital-k = "curly-serifless"
 capital-q = "curly-tailed"
@@ -19,22 +29,14 @@ x = "curly-serifless"
 y = "curly-turn"
 long-s = "flat-hook-descending"
 eszet = "traditional-descending"
-turn-v = "curly"
 lower-lambda = "straight-turn"
-zero = "slashed"
-one = "no-base"
-two = "curly-neck"
-three = "flat-top"
-four = "semi-open"
-five = "vertical-upper-left-bar"
-six = "straight-bar"
-seven = "curly-serifless"
-eight = "two-circles"
-nine = "straight-bar"
+diacritic-dot = "round"
+punctuation-dot = "round"
 asterisk = "penta-low"
 underscore = "high"
-pilcrow = "low"
 caret = "medium"
+ascii-grave = "straight"
+ascii-single-quote = "straight"
 paren = "normal"
 brace = "straight"
 number-sign = "upright"
@@ -44,46 +46,53 @@ dollar = "through"
 cent = "through"
 percent = "rings-continuous-slash"
 bar = "natural-slope"
-lig-ltgteq = "flat"
-ascii-single-quote = "straight"
-ascii-grave = "straight"
 question = "smooth"
-punctuation-dot = "round"
-diacritic-dot = "round"
+pilcrow = "low"
+lig-ltgteq = "flat"
 lig-neq = "more-slanted"
 lig-equal-chain = "without-notch"
 
-  [buildPlans.iosevka-cosmic.ligations]
+  [buildPlans.IosevkaCosmic.ligations]
   inherits = "dlig"
 
-[buildPlans.iosevka-cosmic.weights.light]
+[buildPlans.IosevkaCosmic.weights.Light]
 shape = 300
 menu = 300
 css = 300
 
-[buildPlans.iosevka-cosmic.weights.regular]
+[buildPlans.IosevkaCosmic.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.iosevka-cosmic.weights.bold]
+[buildPlans.IosevkaCosmic.weights.Bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.iosevka-cosmic.weights.heavy]
+[buildPlans.IosevkaCosmic.weights.Heavy]
 shape = 900
 menu = 900
 css = 900
 
-[buildPlans.iosevka-cosmic-proportional]
+[buildPlans.IosevkaMilkyWay]
 family = "Iosevka MilkyWay"
 spacing = "quasi-proportional"
 serifs = "sans"
 noCvSs = true
-export-glyph-names = true
+exportGlyphNames = true
 
-[buildPlans.iosevka-cosmic-proportional.variants.design]
+[buildPlans.IosevkaMilkyWay.variants.design]
+one = "no-base"
+two = "curly-neck"
+three = "flat-top"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+six = "straight-bar"
+seven = "curly-serifless"
+eight = "two-circles"
+nine = "straight-bar"
+zero = "slashed"
 capital-a = "curly-serifless"
 capital-k = "curly-serifless"
 capital-q = "curly-tailed"
@@ -97,22 +106,14 @@ x = "curly-serifless"
 y = "curly-turn"
 long-s = "flat-hook-descending"
 eszet = "traditional-descending"
-turn-v = "curly"
 lower-lambda = "straight-turn"
-zero = "slashed"
-one = "no-base"
-two = "curly-neck"
-three = "flat-top"
-four = "semi-open"
-five = "vertical-upper-left-bar"
-six = "straight-bar"
-seven = "curly-serifless"
-eight = "two-circles"
-nine = "straight-bar"
+diacritic-dot = "round"
+punctuation-dot = "round"
 asterisk = "penta-low"
 underscore = "high"
-pilcrow = "low"
 caret = "medium"
+ascii-grave = "straight"
+ascii-single-quote = "straight"
 paren = "normal"
 brace = "straight"
 number-sign = "upright"
@@ -122,43 +123,50 @@ dollar = "through"
 cent = "through"
 percent = "rings-continuous-slash"
 bar = "natural-slope"
-lig-ltgteq = "flat"
-ascii-single-quote = "straight"
-ascii-grave = "straight"
 question = "smooth"
-punctuation-dot = "round"
-diacritic-dot = "round"
+pilcrow = "low"
+lig-ltgteq = "flat"
 lig-neq = "more-slanted"
 lig-equal-chain = "without-notch"
 
-[buildPlans.iosevka-cosmic-proportional.weights.light]
+[buildPlans.IosevkaMilkyWay.weights.Light]
 shape = 300
 menu = 300
 css = 300
 
-[buildPlans.iosevka-cosmic-proportional.weights.regular]
+[buildPlans.IosevkaMilkyWay.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.iosevka-cosmic-proportional.weights.bold]
+[buildPlans.IosevkaMilkyWay.weights.Bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.iosevka-cosmic-proportional.weights.heavy]
+[buildPlans.IosevkaMilkyWay.weights.Heavy]
 shape = 900
 menu = 900
 css = 900
 
-[buildPlans.iosevka-cosmic-slab]
+[buildPlans.IosevkaAndromeda]
 family = "Iosevka Andromeda"
 spacing = "quasi-proportional"
 serifs = "slab"
 noCvSs = true
-export-glyph-names = true
+exportGlyphNames = true
 
-[buildPlans.iosevka-cosmic-slab.variants.design]
+[buildPlans.IosevkaAndromeda.variants.design]
+one = "no-base"
+two = "curly-neck"
+three = "flat-top"
+four = "semi-open"
+five = "vertical-upper-left-bar"
+six = "straight-bar"
+seven = "curly-serifless"
+eight = "two-circles"
+nine = "straight-bar"
+zero = "slashed"
 capital-a = "curly-serifless"
 capital-k = "curly-serifless"
 capital-q = "curly-tailed"
@@ -172,22 +180,14 @@ x = "curly-serifless"
 y = "curly-turn"
 long-s = "flat-hook-descending"
 eszet = "traditional-descending"
-turn-v = "curly"
 lower-lambda = "straight-turn"
-zero = "slashed"
-one = "no-base"
-two = "curly-neck"
-three = "flat-top"
-four = "semi-open"
-five = "vertical-upper-left-bar"
-six = "straight-bar"
-seven = "curly-serifless"
-eight = "two-circles"
-nine = "straight-bar"
+diacritic-dot = "round"
+punctuation-dot = "round"
 asterisk = "penta-low"
 underscore = "high"
-pilcrow = "low"
 caret = "medium"
+ascii-grave = "straight"
+ascii-single-quote = "straight"
 paren = "normal"
 brace = "straight"
 number-sign = "upright"
@@ -197,31 +197,28 @@ dollar = "through"
 cent = "through"
 percent = "rings-continuous-slash"
 bar = "natural-slope"
-lig-ltgteq = "flat"
-ascii-single-quote = "straight"
-ascii-grave = "straight"
 question = "smooth"
-punctuation-dot = "round"
-diacritic-dot = "round"
+pilcrow = "low"
+lig-ltgteq = "flat"
 lig-neq = "more-slanted"
 lig-equal-chain = "without-notch"
 
-[buildPlans.iosevka-cosmic-slab.weights.light]
+[buildPlans.IosevkaAndromeda.weights.Light]
 shape = 300
 menu = 300
 css = 300
 
-[buildPlans.iosevka-cosmic-slab.weights.regular]
+[buildPlans.IosevkaAndromeda.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.iosevka-cosmic-slab.weights.bold]
+[buildPlans.IosevkaAndromeda.weights.Bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.iosevka-cosmic-slab.weights.heavy]
+[buildPlans.IosevkaAndromeda.weights.Heavy]
 shape = 900
 menu = 900
 css = 900
@@ -229,17 +226,7 @@ css = 900
 ###################################################################################################
 # Collect plans
 
-[collectPlans.iosevka-cosmic]
+[collectPlans.IosevkaCosmic]
 from = [
-    "iosevka-cosmic"
-]
-
-[collectPlans.iosevka-cosmic-proportional]
-from = [
-    "iosevka-cosmic-proportional"
-]
-
-[collectPlans.iosevka-cosmic-slab]
-from = [
-    "iosevka-cosmic-slab"
+    "IosevkaCosmic", "IosevkaMilkyWay", "IosevkaAndromeda"
 ]
