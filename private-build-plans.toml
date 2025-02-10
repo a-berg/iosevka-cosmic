@@ -155,7 +155,7 @@ css = 900
 family = "Iosevka Andromeda"
 spacing = "quasi-proportional"
 serifs = "slab"
-no-cv-ss = true
+noCvSs = true
 export-glyph-names = true
 
 [buildPlans.iosevka-cosmic-slab.variants.design]
