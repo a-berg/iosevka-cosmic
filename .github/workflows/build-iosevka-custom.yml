@@ -48,14 +48,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends ttfautohint
 
-      # Copy the file to iosevka folder
-      - name: Copy build-plans
-        shell: bash
-        run: cp private-build-plans.toml iosevka/
-
       - name: Build Font ${{ matrix.fontName }}
         shell: bash
         working-directory: iosevka
         run: |
           npm install
-          npm run build -- super-ttc::IosevkaCosmic
+          npm run build -- contents::Iosevka
