@@ -80,7 +80,7 @@ css = 900
 family = "Iosevka MilkyWay"
 spacing = "quasi-proportional"
 serifs = "sans"
-no-cv-ss = true
+noCvSs = true
 export-glyph-names = true
 
 [buildPlans.iosevka-cosmic-proportional.variants.design]
