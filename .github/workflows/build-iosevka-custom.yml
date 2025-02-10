@@ -58,4 +58,4 @@ jobs:
         working-directory: iosevka
         run: |
           npm install
-          npm run build -- super-ttc::iosevka-cosmic
+          npm run build -- super-ttc::IosevkaCosmic
